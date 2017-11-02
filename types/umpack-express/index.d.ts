@@ -74,4 +74,4 @@ export interface UmpackExpress {
   getUserNameFromRequest: (req: Request) => Promise<string>;
 }
 
-export function umpack(options: UmpackExpressOptions): UmpackExpress;
+export function umpackExpress(options: UmpackExpressOptions): UmpackExpress;
