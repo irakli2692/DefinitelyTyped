@@ -1,5 +1,6 @@
-// Type definitions for umpack-express
+// Type definitions for umpack-express 1.11
 // Project: https://github.com/liz4rdcom/umpack-express
+// Definitions by: Irakli Jishkariani <https://github.com/irakli2692>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 import { IRouter, RequestHandler, Request } from "express-serve-static-core";
@@ -34,7 +35,7 @@ declare namespace umpack {
 
   interface PasswordResetPhoneOptions {
     resetKeyExpiresIn: string;
-    sendResetKey: (phone: string, resetKey: string) => void | Promise<any>
+    sendResetKey: (phone: string, resetKey: string) => void | Promise<any>;
   }
 
   interface UmpackExpressOptions {
