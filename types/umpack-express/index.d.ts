@@ -2,6 +2,7 @@
 // Project: https://github.com/liz4rdcom/umpack-express
 // Definitions by: Irakli Jishkariani <https://github.com/irakli2692>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.2
 
 import { IRouter, RequestHandler, Request } from "express-serve-static-core";
 
@@ -66,13 +67,13 @@ declare namespace umpack {
     filterUsersByRole: (role: string) => Promise<any>;
     /**
      * if deviceControl is enabled, deviceToken is required.
-     * @return {string | null} password
+     * returns password
      */
     init: (umBaseUrl: string, passwordText?: string, deviceToken?: string) => Promise<string>;
     /**
      * init user with full api access
      * if deviceControl is enabled, deviceToken is required.
-     * @return {string | null} password
+     * returns password
      */
     initWithFullAccess: (umBaseUrl: string, deviceToken?: string) => Promise<string>;
     getUserNameFromRequest: (req: Request) => Promise<string>;
