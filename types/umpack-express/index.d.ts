@@ -14,7 +14,7 @@ export interface Logger {
 
 export interface SmtpOptions {
   host: string;
-  port: string;
+  port: number;
   user: string;
   password: string;
   timeout?: number;
