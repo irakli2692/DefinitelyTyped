@@ -16,6 +16,8 @@
         "forceConsistentCasingInFileNames": true
     },
     "files": [
-        "index.d.ts"
+        "index.d.ts",
+        "umpack-express-tests.ts",
+        "test-index.html"
     ]
 }
